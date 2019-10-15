@@ -1,3 +1,3 @@
-# flutter-navigation-minis
+# flutter-architecture-minis
 
-Small, single purpose examples for navigation in flutter.
+Small, single purpose examples for architecting apps in flutter.
