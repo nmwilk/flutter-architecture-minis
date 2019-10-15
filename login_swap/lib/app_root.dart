@@ -1,19 +1,15 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:login_swap/user_state_provider.dart';
+import 'package:generic_bloc_provider/generic_bloc_provider.dart';
+import 'package:login_swap/user_state_bloc.dart';
 
 class AppRoot extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final userStateBloc = UserStateProvider.of(context);
+    final userStateBloc = BlocProvider.of<UserStateBloc>(context);
     return StreamBuilder<bool>(
         stream: userStateBloc.userLoggedIn,
         builder: (context, snapshot) {
-          print('${snapshot.data}');
-          if (!snapshot.hasData) {
-            // means progress indicator will appear before data is received
-            userStateBloc.initialiseState();
-          }
           return AnimatedSwitcher(
               duration: Duration(milliseconds: 300),
               child: snapshot.hasData
