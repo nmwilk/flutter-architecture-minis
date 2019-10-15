@@ -8,9 +8,13 @@ class PushScreen extends StatelessWidget {
         title: Text("Push"),
       ),
       body: Container(
-        color: Colors.lightBlueAccent,
+        color: Colors.blue,
         child: Center(
-          child: Text("Some text"),
+          child: Text("Some text",
+              style: TextStyle(
+                fontSize: 20,
+                color: Colors.white,
+              )),
         ),
       ),
     );

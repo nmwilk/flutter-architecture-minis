@@ -8,9 +8,13 @@ class ModalScreen extends StatelessWidget {
         title: Text("Modal"),
       ),
       body: Container(
-        color: Colors.amber,
+        color: Colors.green,
         child: Center(
-          child: Text("Some text"),
+          child: Text("Some text",
+              style: TextStyle(
+                fontSize: 20,
+                color: Colors.white,
+              )),
         ),
       ),
     );
