@@ -19,12 +19,14 @@ class MainScreenState extends State<MainScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             RaisedButton(
-              child: Text("Open Modal",
+              child: Text(
+                "Open Modal",
                 style: TextStyle(fontSize: 20),
               ),
               onPressed: () => Navigator.push(
                   context,
                   MaterialPageRoute(
+                      maintainState: false,
                       fullscreenDialog: true,
                       builder: (context) => ModalScreen())),
             ),
@@ -35,6 +37,15 @@ class MainScreenState extends State<MainScreen> {
                 style: TextStyle(fontSize: 20),
               ),
               onPressed: () => Navigator.pushNamed(context, '/push'),
+            ),
+            Container(height: 20),
+            RaisedButton(
+              child: Text(
+                "Push Replacement",
+                style: TextStyle(fontSize: 20),
+              ),
+              onPressed: () =>
+                  Navigator.pushReplacementNamed(context, '/replace'),
             ),
           ],
         ),

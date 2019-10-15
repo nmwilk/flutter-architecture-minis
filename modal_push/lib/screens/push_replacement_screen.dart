@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class PushScreen extends StatelessWidget {
+class PushReplacementScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -13,10 +13,17 @@ class PushScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
+              Text('This screen is now the root of the app'),
+              Container(height: 20),
               RaisedButton(
-                child: Text('Pop'),
-                onPressed: () => Navigator.pop(context),
-              )
+                onPressed: () => Navigator.pushReplacementNamed(context, '/'),
+                child: Text(
+                  "Restart",
+                  style: TextStyle(
+                    fontSize: 20,
+                  ),
+                ),
+              ),
             ],
           ),
         ),

@@ -10,11 +10,15 @@ class ModalScreen extends StatelessWidget {
       body: Container(
         color: Colors.green,
         child: Center(
-          child: Text("Some text",
-              style: TextStyle(
-                fontSize: 20,
-                color: Colors.white,
-              )),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              RaisedButton(
+                child: Text('Pop'),
+                onPressed: () => Navigator.pop(context),
+              )
+            ],
+          ),
         ),
       ),
     );
