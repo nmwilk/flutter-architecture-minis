@@ -6,7 +6,7 @@ achieving similar functionality of Android's ViewModel (https://developer.androi
 The example shows a main screen
 
 - whose state is persisted across Widget build calls anywhere up the Widget hierarchy.
-- whose state has a dependency another state that is a single app instance.
+- whose state has a dependency on another state that is a single app instance.
 
 And a sub screen that accesses the same single app instance via a BlocProvider, so it doesn't need to be injected directly.
 
