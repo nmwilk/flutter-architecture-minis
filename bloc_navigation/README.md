@@ -9,5 +9,6 @@ made from the `Widget` - not the BLoC.
 The event isn't a broadcast stream like the buttonEnabled stream, as for events we want them to be
 single shot - so events aren't fired more than once.
 
-![](https://github.com/nmwilk/flutter-architecture-minis/bloc_navigation/blob/master/demo.gif)
+![](https://github.com/nmwilk/flutter-architecture-minis/blob/master/bloc_navigation/demo.gif)
+ 
  
