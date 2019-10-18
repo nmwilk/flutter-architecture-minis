@@ -9,6 +9,7 @@ class SubScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // pull out the App State from the hierarchy
     final appStateBloc = BlocProvider.of<AppStateBloc>(context);
     return Scaffold(
       appBar: AppBar(

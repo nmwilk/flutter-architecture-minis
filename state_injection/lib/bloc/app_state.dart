@@ -11,7 +11,7 @@ class AppStateBloc extends Bloc {
 
   AppStateBloc() {
     if (++instanceCounter > 1) {
-      throw Exception("Should never be two instances of MainScreenBloc");
+      throw Exception("Should never be two instances of AppStateBloc");
     }
   }
 

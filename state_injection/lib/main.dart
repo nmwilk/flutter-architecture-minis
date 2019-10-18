@@ -4,7 +4,7 @@ import 'package:state_injection/bloc/app_state.dart';
 import 'package:state_injection/screen/main_screen.dart';
 import 'package:state_injection/screen/sub_screen.dart';
 
-// single instance, injected through
+// single instance, injected through constructors & BlocProvider
 final _appStateBloc = AppStateBloc();
 
 void main() => runApp(MyApp(_appStateBloc));
