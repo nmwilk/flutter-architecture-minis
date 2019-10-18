@@ -7,4 +7,7 @@ main Screen's `State` - in its `initState` override. This way the `Navigator` ca
 made from the `Widget` - not the BLoC.
 
 The event isn't a broadcast stream like the buttonEnabled stream, as for events we want them to be
-single shot - so events aren't fired more than once. 
+single shot - so events aren't fired more than once.
+
+![alt text](https://github.com/nmwilk/flutter-architecture-minis/raw/master/demo.gif "Demo")
+ 
