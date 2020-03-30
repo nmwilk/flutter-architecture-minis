@@ -8,18 +8,17 @@ class MainScreen extends StatefulWidget {
   MainScreen(this._appStateBloc) : super();
 
   @override
-  _MainScreenState createState() => _MainScreenState(_appStateBloc);
+  _MainScreenState createState() => _MainScreenState();
 }
 
 class _MainScreenState extends State<MainScreen> {
-  final AppStateBloc _appStateBloc;
   MainScreenBloc _mainScreenBloc;
 
-  _MainScreenState(this._appStateBloc);
+  _MainScreenState();
 
   @override
   void initState() {
-    _mainScreenBloc = MainScreenBloc(_appStateBloc);
+    _mainScreenBloc = MainScreenBloc(widget._appStateBloc);
     super.initState();
   }
 
